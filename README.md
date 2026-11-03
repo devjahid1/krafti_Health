@@ -1,16 +1,99 @@
-# React + Vite
+# MediLink – Healthcare Management Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MediLink is a modern and responsive healthcare website designed to make healthcare services more accessible for patients and doctors. The platform provides a clean, user-friendly interface to explore healthcare services and connect with medical professionals.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Modern and responsive user interface
+- Homepage with healthcare-focused sections
+- Patient and doctor information sections
+- Healthcare services showcase
+- Simple steps to better healthcare
+- Healthcare benefits section
+- Patient and doctor testimonials
+- Call-to-action section
+- Responsive footer and navigation
+- Reusable React components
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React.js** – Frontend library
+- **Vite** – Development and build tool
+- **Tailwind CSS** – Styling and responsive design
+- **JavaScript / JSX** – Application development
+- **Lucide React** – Icons
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+MediLink_Website/
+├── public/
+├── src/
+│   ├── assets/
+│   │   └── HomeImg/
+│   ├── Components/
+│   │   └── Home_Components/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/devjahid1/krafti_Health.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd krafti_Health
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## 🏗️ Build for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+To preview the production build:
+
+```bash
+npm run preview
+```
+
+## 🎯 Project Goal
+
+The goal of MediLink is to create a connected healthcare experience through a modern digital platform. This website serves as the frontend foundation for a broader healthcare management platform.
+
+## 👨‍💻 Development
+
+Developed as part of the MediLink healthcare platform project.
+
+## 📄 License
+
+This project is currently developed for the MediLink project. All rights reserved.
