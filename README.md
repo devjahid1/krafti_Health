@@ -1,27 +1,28 @@
-# MediLink – Healthcare Management Website
+# MediLink – Healthcare Management Platform
 
-MediLink is a modern and responsive healthcare website designed to make healthcare services more accessible for patients and doctors. The platform provides a clean, user-friendly interface to explore healthcare services and connect with medical professionals.
+MediLink is a modern healthcare management platform designed to simplify and improve the way patients and healthcare professionals connect. It aims to make healthcare services more accessible, efficient, and convenient through a unified digital experience.
+
+**Developed by Krafti Code**
 
 ## ✨ Features
 
 - Modern and responsive user interface
-- Homepage with healthcare-focused sections
 - Patient and doctor information sections
 - Healthcare services showcase
 - Simple steps to better healthcare
 - Healthcare benefits section
 - Patient and doctor testimonials
 - Call-to-action section
-- Responsive footer and navigation
+- Responsive navigation and footer
 - Reusable React components
 
-## 🛠️ Technologies Used
+## 🛠️ Technology Stack
 
 - **React.js** – Frontend library
 - **Vite** – Development and build tool
 - **Tailwind CSS** – Styling and responsive design
 - **JavaScript / JSX** – Application development
-- **Lucide React** – Icons
+- **Lucide React** – Icon library
 
 ## 📁 Project Structure
 
@@ -44,7 +45,10 @@ MediLink_Website/
 
 ## 🚀 Getting Started
 
-Follow these steps to run the project locally.
+### Prerequisites
+
+- Node.js
+- npm
 
 ### 1. Clone the Repository
 
@@ -52,7 +56,7 @@ Follow these steps to run the project locally.
 git clone https://github.com/devjahid1/krafti_Health.git
 ```
 
-### 2. Navigate to the Project Directory
+### 2. Navigate to the Project
 
 ```bash
 cd krafti_Health
@@ -64,36 +68,34 @@ cd krafti_Health
 npm install
 ```
 
-### 4. Start the Development Server
+### 4. Run Development Server
 
 ```bash
 npm run dev
 ```
 
-Open the local URL provided by Vite in your browser.
+Open the local URL displayed in your terminal.
 
-## 🏗️ Build for Production
-
-To create an optimized production build:
+## 🏗️ Production Build
 
 ```bash
 npm run build
 ```
 
-To preview the production build:
+Preview the production build:
 
 ```bash
 npm run preview
 ```
 
-## 🎯 Project Goal
+## 🎯 Vision
 
-The goal of MediLink is to create a connected healthcare experience through a modern digital platform. This website serves as the frontend foundation for a broader healthcare management platform.
+MediLink aims to build a connected healthcare ecosystem where patients, doctors, and healthcare service providers can access essential healthcare services through one integrated platform.
 
-## 👨‍💻 Development
+## 🏢 About Krafti Code
 
-Developed as part of the MediLink healthcare platform project.
+MediLink is a product developed by **Krafti Code**, a technology company focused on building modern web applications, software solutions, and digital experiences.
 
 ## 📄 License
 
-This project is currently developed for the MediLink project. All rights reserved.
+All rights reserved. MediLink is a proprietary product of Krafti Code. Unauthorized copying, distribution, or commercial use is prohibited.
