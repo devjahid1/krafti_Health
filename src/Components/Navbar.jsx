@@ -1,114 +1,103 @@
-
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import logo from "../assets/Logo.png";
+
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "For Patients", path: "/patients" },
+  { name: "For Doctors", path: "/doctors" },
+  { name: "Features", path: "/features" },
+  { name: "About", path: "/about" },
+];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "For Patients", href: "/patients" },
-    { name: "For Doctors", href: "/doctors" },
-    { name: "Features", href: "/features" },
-    { name: "About", href: "/about" },
-  ];
+  const closeMenu = () => setMenuOpen(false);
+
+  const linkClass =
+    "whitespace-nowrap text-[15px] font-medium text-[#26364B] transition-colors duration-200 hover:text-[#176BFF] xl:text-[16px] 2xl:text-[18px]";
 
   return (
     <header className="relative z-50 w-full">
-      <nav className="mx-auto flex min-h-[100px] max-w-[1190px] items-center px-5 py-4 sm:px-8 lg:px-12">
+      {/* Navbar Container */}
+      <nav className="mx-auto flex w-full max-w-[1480px] items-center justify-between gap-3 px-4 py-4 sm:px-6 md:px-8 lg:gap-4 lg:px-8 xl:px-10 2xl:px-0 2xl:py-6">
 
         {/* Logo */}
-        <a href="/" className="flex shrink-0 items-center">
+        <a
+          href="/"
+          onClick={closeMenu}
+          className="flex shrink-0 items-center"
+          aria-label="MediLink Home"
+        >
           <img
-            className="h-[44px] w-[172px] object-contain"
             src={logo}
             alt="MediLink"
+            className="h-auto w-[125px] sm:w-[145px] lg:w-[150px] xl:w-[160px] 2xl:w-[172px]"
           />
         </a>
 
         {/* Desktop Navigation */}
-        <div className="ml-8 hidden items-center gap-10 lg:flex xl:ml-24 xl:gap-10">
+        <div className="hidden min-w-0 flex-1 items-center justify-center gap-4 lg:flex xl:gap-6 2xl:gap-10">
           {navLinks.map((link) => (
             <a
-              key={link.name}
-              href={link.href}
-              className="whitespace-nowrap text-[18px] font-normal text-[#526580] transition-colors duration-200 hover:text-[#009B91]"
+              key={link.path}
+              href={link.path}
+              className={linkClass}
             >
               {link.name}
             </a>
           ))}
         </div>
 
-        {/* Spacer */}
-        <div className="flex-1" />
-
         {/* Desktop Sign In */}
-        <a
-          href="/signin"
-          className="hidden min-w-[120px] shrink-0 items-center justify-center rounded-full bg-[#242424] px-8 py-4 text-[17px] font-medium text-white transition-all duration-300 hover:bg-[#009B91] lg:flex"
-        >
-          Sign In
-        </a>
+        <div className="hidden shrink-0 lg:block">
+          <a
+            href="/signin"
+            className="inline-flex items-center justify-center rounded-full bg-[#090909] px-5 py-2.5 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-[#0954D8] xl:px-7 xl:py-3 xl:text-[15px] 2xl:px-10 2xl:py-3.5 2xl:text-[17px]"
+          >
+            Sign In
+          </a>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
           type="button"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          onClick={() => setMenuOpen((prev) => !prev)}
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-[#26364B] transition-colors hover:bg-blue-50 lg:hidden"
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={menuOpen}
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-gray-200 text-[#123247] transition hover:bg-gray-100 lg:hidden"
+          aria-controls="mobile-navigation"
         >
-          {menuOpen ? (
-            <svg
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            >
-              <path d="M18 6L6 18M6 6l12 12" />
-            </svg>
-          ) : (
-            <svg
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            >
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          )}
+          {menuOpen ? <X size={25} /> : <Menu size={25} />}
         </button>
       </nav>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Navigation */}
       <div
-        className={`absolute left-0 top-full w-full overflow-hidden border-t border-gray-100 bg-white shadow-lg transition-all duration-300 lg:hidden ${
+        id="mobile-navigation"
+        className={`absolute left-0 right-0 top-full z-50 overflow-hidden border-t border-gray-100 bg-white shadow-lg transition-all duration-300 lg:hidden ${
           menuOpen
-            ? "visible max-h-[400px] opacity-100"
+            ? "visible max-h-[500px] opacity-100"
             : "invisible max-h-0 opacity-0"
         }`}
       >
-        <div className="flex flex-col gap-1 px-6 py-5">
+        <div className="mx-auto flex w-full max-w-[600px] flex-col px-5 py-4 sm:px-8">
           {navLinks.map((link) => (
             <a
-              key={link.name}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-4 py-3 text-[16px] text-[#526580] transition hover:bg-[#EAF9F7] hover:text-[#009B91]"
+              key={link.path}
+              href={link.path}
+              onClick={closeMenu}
+              className="border-b border-gray-100 py-3.5 text-[15px] font-medium text-[#26364B] transition-colors hover:text-[#176BFF]"
             >
               {link.name}
             </a>
           ))}
 
-          {/* Mobile Sign In */}
           <a
             href="/signin"
-            onClick={() => setMenuOpen(false)}
-            className="inline-flex items-center justify-center gap-[10px] rounded-full bg-[#242424] px-[30px] py-[12px] text-[17px] font-medium text-white transition-all duration-300 hover:bg-[#009B91]"
+            onClick={closeMenu}
+            className="mt-4 flex items-center justify-center rounded-full bg-[#0d0d0d] px-6 py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-[#0954D8]"
           >
             Sign In
           </a>
