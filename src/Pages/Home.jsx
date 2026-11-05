@@ -17,17 +17,19 @@ const Home = () => {
   return (
     <main className="relative isolate min-h-screen w-full min-w-0 overflow-x-clip bg-white">
 
-      {/* Hero Background - Original Figma Size: 1920 × 850 */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[850px] overflow-hidden">
-        <div
-          className="absolute left-1/2 top-0 h-[850px] w-[1920px] -translate-x-1/2 bg-no-repeat"
-          style={{
-            backgroundImage: `url("${bannerBg}")`,
-            backgroundSize: "1920px 850px",
-            backgroundPosition: "center top",
-          }}
-        />
-      </div>
+{/* Hero Background */}
+<div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[1100px] overflow-hidden md:h-[1200px] lg:h-[850px]">
+  <div
+    className="absolute left-1/2 top-0 h-full w-[1920px] -translate-x-1/2 bg-no-repeat
+      [background-size:1920px_850px]
+      md:[background-size:1920px_1200px]
+      lg:[background-size:1920px_850px]"
+    style={{
+      backgroundImage: `url("${bannerBg}")`,
+      backgroundPosition: "center top",
+    }}
+  />
+</div>
 
       {/* Website Content */}
       <div className="relative z-10 w-full min-w-0">
@@ -41,17 +43,11 @@ const Home = () => {
         {/* Website Sections */}
         <div className="w-full min-w-0">
           <Services />
-
           <PatientDoctorSection />
-
           <StatisticsSection />
-
           <SimpleSteps />
-
           <HealthcareBenefits />
-
           <Testimonials />
-
           <HealthcareCTA />
         </div>
 

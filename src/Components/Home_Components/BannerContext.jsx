@@ -44,35 +44,41 @@ const BannerContext = () => {
 
       {/* Right Hero Images */}
 
-
-<div className="relative mx-auto mt-10 flex w-full min-w-0 items-center justify-center lg:w-[58%] lg:ml-0 xl:ml-[55px] 2xl:ml-[55px]">
+<div className="relative mx-auto mt-10 flex w-full min-w-0 items-center justify-center sm:mt-8 sm:w-full lg:w-[58%] lg:ml-0 xl:ml-[55px] 2xl:ml-[55px]">
 
   {/* Main DP Image */}
   <img
     src={dp}
     alt="MediLink doctor and patient"
-    className="relative z-10 h-auto w-full max-w-[420px] object-contain sm:max-w-[520px] md:max-w-[650px] lg:max-w-[560px] lg:mb-[-247px] xl:max-w-[680px] xl:mb-[-122px] 2xl:max-w-[857px] 2xl:mb-0 2xl:mt-[-20px]"
+    className="relative z-10 h-auto w-full max-w-[420px] object-contain sm:max-w-[480px] sm:mb-[-60px] md:max-w-[650px] md:mb-[-80px] lg:max-w-[560px] lg:mb-[-247px] xl:max-w-[680px] xl:mb-[-145px] 2xl:max-w-[857px] 2xl:mb-0 2xl:mt-[-20px]"
   />
 
   {/* Doctor Image */}
-<img
-  src={doctor}
-  alt="Doctor"
-  className="absolute z-0 h-auto w-[34%] max-w-[304px] object-contain
-  md:left-[5%] md:top-[-10%]
-  lg:left-[10%] lg:top-[-38%]
-  xl:left-[10%] xl:top-[-22%]
-  2xl:left-[15%] 2xl:top-[-19%]"
-/>
+  <img
+    src={doctor}
+    alt="Doctor"
+    className="absolute z-0 h-auto w-[34%] max-w-[304px] object-contain
+    sm:left-[5%] sm:top-[-8%]
+    md:left-[5%] md:top-[-10%]
+    lg:left-[10%] lg:top-[-38%]
+    xl:left-[10%] xl:top-[-22%]
+    2xl:left-[15%] 2xl:top-[-19%]"
+  />
 
   {/* Patient Image */}
   <img
     src={patient}
     alt="Patient"
-    className="absolute z-20 h-auto w-[36%] max-w-[327px] object-contain lg:bottom-[-90%] lg:right-[-5%] xl:bottom-[-1%] xl:right-[-5%] 2xl:bottom-[25%] 2xl:right-[-1%]"
+    className="absolute z-20 h-auto w-[36%] max-w-[327px] object-contain
+    sm:bottom-[5%] sm:right-[-1%]
+    md:bottom-[5%] md:right-[-2%]
+    lg:bottom-[-90%] lg:right-[-5%]
+    xl:bottom-[-7%] xl:right-[-5%]
+    2xl:bottom-[25%] 2xl:right-[-1%]"
   />
 
 </div>
+
 
 
     </section>
