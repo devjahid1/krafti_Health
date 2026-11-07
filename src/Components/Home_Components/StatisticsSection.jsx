@@ -32,36 +32,38 @@ const statistics = [
 
 const StatisticsSection = () => {
   return (
-    <section className="w-full bg-white px-5 py-10 md:px-10 lg:px-[90px]">
-      <div className="mx-auto grid w-full max-w-[1775px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+    <section className="w-full bg-white py-10">
+      {/* Main Container */}
+      <div className="relative left-1/2 w-[calc(100%-40px)] max-w-[1457px] -translate-x-1/2">
+        {/* Statistics Grid */}
+        <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+          {statistics.map((item) => (
+            <div
+              key={item.id}
+              className="flex items-center gap-[18px]"
+            >
+              {/* Icon */}
+              <div className="flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-[#D2F0F0]">
+                <img
+                  src={item.icon}
+                  alt=""
+                  className="h-[38px] w-[38px] object-contain"
+                />
+              </div>
 
-        {statistics.map((item) => (
-          <div
-            key={item.id}
-            className="flex items-center gap-[18px]"
-          >
-            {/* Icon */}
-            <div className="flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-[#D2F0F0]">
-              <img
-                src={item.icon}
-                alt=""
-                className="h-[38px] w-[38px] object-contain"
-              />
+              {/* Statistics Content */}
+              <div className="flex flex-col">
+                <h3 className="text-[24px] font-medium leading-[28px] text-[#292929]">
+                  {item.number}
+                </h3>
+
+                <p className="whitespace-nowrap text-[18px] leading-[32px] text-[#737373]">
+                  {item.label}
+                </p>
+              </div>
             </div>
-
-            {/* Statistics Content */}
-            <div className="flex flex-col">
-              <h3 className="text-[24px] font-medium leading-[28px] text-[#292929]">
-                {item.number}
-              </h3>
-
-              <p className="whitespace-nowrap text-[18px] leading-[32px] text-[#737373]">
-                {item.label}
-              </p>
-            </div>
-          </div>
-        ))}
-
+          ))}
+        </div>
       </div>
     </section>
   );

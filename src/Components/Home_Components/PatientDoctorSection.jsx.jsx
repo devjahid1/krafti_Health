@@ -36,11 +36,11 @@ const sections = [
 const PatientDoctorSection = () => {
   return (
     <section className="w-full px-5 py-10 md:px-8 lg:px-10">
-      <div className="mx-auto grid w-full max-w-[1900px] grid-cols-1 gap-6 lg:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-[1463px] grid-cols-1 gap-6 lg:grid-cols-2">
         {sections.map((item) => (
           <div
             key={item.id}
-            className="relative isolate aspect-[199/102] max-h-[375px] w-full overflow-hidden rounded-[22px] bg-[#EAF8FA] "
+            className="relative isolate aspect-[199/102] max-h-[375px] w-full overflow-hidden rounded-[22px] bg-[#EAF8FA]"
           >
             {/* Background Image */}
             <img
@@ -50,7 +50,7 @@ const PatientDoctorSection = () => {
             />
 
             {/* Background Overlay */}
-            <div className="absolute inset-0 -z-10 " />
+            <div className="absolute inset-0 -z-10" />
 
             {/* Main Content */}
             <div className="relative z-10 flex h-full flex-col items-start p-5 sm:p-7 md:p-8 lg:p-[38px]">
@@ -82,7 +82,7 @@ const PatientDoctorSection = () => {
 
               {/* Button */}
               <button
-                className={`flex items-center justify-center gap-[10px] mt-[20px] rounded-[150px] px-[20px] py-[8px] text-[17px] font-medium transition duration-300 hover:-translate-y-1 ${
+                className={`mt-[20px] flex items-center justify-center gap-[10px] rounded-[150px] px-[20px] py-[8px] text-[17px] font-medium transition duration-300 hover:-translate-y-1 ${
                   item.type === "patient"
                     ? "bg-[#019490] text-white hover:bg-[#007F7B]"
                     : "border border-[#019490] bg-white text-[#019490] hover:bg-[#019490] hover:text-white"

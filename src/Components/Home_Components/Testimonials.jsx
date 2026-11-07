@@ -31,7 +31,7 @@ const Testimonials = () => {
   return (
     <section className="w-full bg-white px-5 py-[65px] md:px-10 lg:py-[75px]">
 
-      <div className="mx-auto max-w-[1140px]">
+      <div className="mx-auto max-w-[1040px]">
 
         {/* Heading */}
         <div className="mb-[44px] text-center">
@@ -46,11 +46,11 @@ const Testimonials = () => {
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="flex min-h-[270px] flex-col justify-between overflow-hidden rounded-[14px] bg-gradient-to-br from-[#126D69] to-[#005C58] p-[23px] shadow-[inset_0_0_25px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_8px_25px_rgba(0,80,75,0.18)]"
+              className="flex min-h-[250px] max-w-[350px] flex-col justify-between overflow-hidden rounded-[14px] bg-gradient-to-br from-[#126D69] to-[#005C58] p-[23px] shadow-[inset_0_0_25px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_8px_25px_rgba(0,80,75,0.18)]"
             >
 
               {/* Review */}
-              <p className="max-w-[340px] text-[14px] font-normal leading-[21px] text-white/90">
+              <p className="max-w-[270px] text-[14px] font-normal leading-[21px] text-white/90">
                 {item.review}
               </p>
 
