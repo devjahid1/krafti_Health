@@ -72,7 +72,7 @@ const HealthcareBenefits = () => {
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid grid-cols-1 gap-x-[55px] gap-y-[48px] sm:grid-cols-2 lg:grid-cols-3">
+        <div className="max-w-[1133px] grid grid-cols-1 gap-x-[55px] gap-y-[48px] sm:grid-cols-2 lg:grid-cols-3">
 
           {benefits.map((item) => {
             const Icon = item.icon;

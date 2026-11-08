@@ -1,11 +1,11 @@
-import arrow from "../../assets/HomeImg/arrow.png";
-
 import {
   Search,
   CalendarDays,
   FilePenLine,
   FlaskConical,
 } from "lucide-react";
+
+import arrow from "../../assets/HomeImg/arrow.png"
 
 const steps = [
   {
@@ -19,7 +19,7 @@ const steps = [
     title: "Book Appointment",
     description: "Choose a suitable time and confirm your booking.",
     icon: CalendarDays,
-  },
+    },
   {
     id: 3,
     title: "Get Prescription",
@@ -37,7 +37,7 @@ const steps = [
 const SimpleSteps = () => {
   return (
     <section className="mt-6 w-full bg-[#F2F9FC] px-5 py-[65px] md:px-10 lg:py-[75px]">
-      <div className="mx-auto max-w-[1920px]">
+      <div className="mx-auto w-full max-w-[1354px]">
 
         {/* Section Heading */}
         <div className="mb-[38px] text-center">
@@ -51,7 +51,7 @@ const SimpleSteps = () => {
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-20 flex items-center">
+        <div className="mx-auto grid w-full max-w-[1015px] grid-cols-1 items-center gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
 
           {steps.map((step, index) => {
             const Icon = step.icon;
@@ -59,18 +59,15 @@ const SimpleSteps = () => {
             return (
               <div
                 key={step.id}
-                className="relative flex flex-col items-start px-2 lg:px-[20px]"
+                className="relative flex min-w-0 flex-col items-start px-2 lg:px-0"
               >
                 {/* Icon */}
-                <div className="mb-[9px] flex h-[64px] w-[64px] items-center justify-center gap-[10px] rounded-[7px] bg-[#BDEBEC] p-[16px] text-[#006F6C]">
-                  <Icon
-                    size={32}
-                    strokeWidth={1.6}
-                  />
+                <div className="mb-[9px] flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-[7px] bg-[#BDEBEC] p-[16px] text-[#006F6C]">
+                  <Icon size={32} strokeWidth={1.6} />
                 </div>
 
                 {/* Title */}
-                <h3 className="mb-[6px] text-[24px] font-medium leading-[32px] text-[#292929]">
+                <h3 className="mb-[6px] whitespace-nowrap text-[24px] font-medium leading-[32px] text-[#292929]">
                   {step.id}. {step.title}
                 </h3>
 
@@ -81,15 +78,12 @@ const SimpleSteps = () => {
 
                 {/* Arrow */}
                 {index !== steps.length - 1 && (
-                  <div className="absolute right-[-40px] top-[calc(50%+5px)] hidden -translate-y-1/2 lg:block">
-                    <img
-                      src={arrow}
-                      alt=""
-                      className="h-auto w-[40px] object-contain"
-                    />
+                  <div className="absolute right-[30px] top-[32px] z-50 hidden h-[33px] w-[83px] items-center justify-center lg:flex">
+                    <span className="text-[38px] font-bold leading-none ">
+                      <img src={arrow} alt="" />
+                    </span>
                   </div>
                 )}
-
               </div>
             );
           })}
