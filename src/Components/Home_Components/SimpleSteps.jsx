@@ -78,7 +78,7 @@ const SimpleSteps = () => {
 
                 {/* Arrow */}
                 {index !== steps.length - 1 && (
-                  <div className="absolute right-[30px] top-[32px] z-50 hidden h-[33px] w-[83px] items-center justify-center lg:flex">
+                  <div className="absolute right-[30px] top-[40px] z-50 hidden h-[33px] w-[83px] items-center justify-center lg:flex">
                     <span className="text-[38px] font-bold leading-none ">
                       <img src={arrow} alt="" />
                     </span>
