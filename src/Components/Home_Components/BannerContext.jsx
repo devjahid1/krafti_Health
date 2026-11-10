@@ -51,21 +51,21 @@ const BannerContext = () => {
         <img
           src={dp}
           alt="MediLink doctor and patient"
-          className="relative z-10 h-auto w-full max-w-[280px] object-contain min-[375px]:max-w-[340px] min-[390px]:max-w-[355px] sm:max-w-[480px] sm:mb-[-60px] md:max-w-[650px] md:mb-[-80px] lg:max-w-[560px] lg:mb-[-247px] xl:max-w-[680px] xl:mb-[-150px] 2xl:max-w-[857px] 2xl:mb-0 2xl:mt-[-12px]"
+          className="relative z-10 h-auto w-full max-w-[280px] object-contain min-[375px]:max-w-[340px] min-[390px]:max-w-[355px] sm:max-w-[480px] sm:mb-[-60px] md:max-w-[650px] md:mb-[-80px] lg:max-w-[560px] lg:mb-[-247px] xl:max-w-[680px] xl:mb-[-150px] 2xl:max-w-[857px] 2xl:mb-0 2xl:mt-[-12px] animate-fade-in"
         />
 
         {/* Doctor Image */}
         <img
           src={doctor}
           alt="Doctor"
-          className="absolute z-0 hidden h-auto w-[34%] max-w-[304px] object-contain md:block md:left-[5%] md:top-[-10%] lg:left-[10%] lg:top-[-38%] xl:left-[10%] xl:top-[-24%] 2xl:left-[13%] 2xl:top-[-18%]"
+          className="absolute z-0 hidden h-auto w-[34%] max-w-[304px] object-contain md:block md:left-[5%] md:top-[-10%] lg:left-[10%] lg:top-[-38%] xl:left-[10%] xl:top-[-24%] 2xl:left-[13%] 2xl:top-[-18%] animate-fade-in-delay"
         />
 
         {/* Patient Image */}
         <img
           src={patient}
           alt="Patient"
-          className="absolute z-20 hidden h-auto w-[36%] max-w-[327px] object-contain md:block md:bottom-[5%] md:right-[-2%] lg:bottom-[-90%] lg:right-[-5%] xl:bottom-[-7%] xl:right-[-5%] 2xl:bottom-[25%] 2xl:right-[-1%]"
+          className="absolute z-20 hidden h-auto w-[36%] max-w-[327px] object-contain md:block md:bottom-[5%] md:right-[-2%] lg:bottom-[-90%] lg:right-[-5%] xl:bottom-[-7%] xl:right-[-5%] 2xl:bottom-[25%] 2xl:right-[-1%] animate-fade-in-late"
         />
 
       </div>
