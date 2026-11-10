@@ -69,14 +69,14 @@ const PatientDoctorSection = () => {
                     {item.label}
                   </p>
 
-                  <h2 className="text-[26px] font-semibold leading-[34px] text-[#292929] md:text-[32px]">
+                  <h2 className="text-[26px] font-semibold leading-[34px] text-[#292929] md:text-[32px] font-jakarta">
                     {item.title}
                   </h2>
                 </div>
               </div>
 
               {/* Description */}
-              <p className="mt-4 w-[350px] max-w-full text-[18px] leading-[27px] text-[#475569] md:leading-[28px]">
+              <p className="mt-4 w-[350px] max-w-full text-[18px] leading-[27px] text-[#475569] md:leading-[28px] font-inter">
                 {item.description}
               </p>
 

@@ -19,7 +19,7 @@ const Navbar = () => {
     "whitespace-nowrap text-[15px] font-medium text-[#26364B] transition-colors duration-200 hover:text-[#176BFF] xl:text-[16px] 2xl:text-[18px]";
 
   return (
-    <header className="relative z-50 w-full">
+    <header className="relative z-50 w-full font-inter">
       {/* Navbar Container */}
       <nav className="mx-auto flex w-full max-w-[1480px] items-center justify-between gap-3 px-4 py-4 sm:px-6 md:px-8 lg:gap-4 lg:px-8 xl:px-10 2xl:px-0 2xl:py-6">
 
@@ -54,7 +54,7 @@ const Navbar = () => {
         <div className="hidden shrink-0 lg:block">
           <a
             href="/signin"
-            className="inline-flex items-center justify-center rounded-full bg-[#090909] px-5 py-2.5 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-[#0954D8] xl:px-7 xl:py-3 xl:text-[15px] 2xl:px-10 2xl:py-3.5 2xl:text-[17px]"
+            className="inline-flex items-center justify-center rounded-full bg-[#090909] px-3 py-7.5 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-[#0954D8] xl:px-7 xl:py-3 xl:text-[15px] 2xl:px-10 2xl:py-3.5 2xl:text-[17px]"
           >
             Sign In
           </a>

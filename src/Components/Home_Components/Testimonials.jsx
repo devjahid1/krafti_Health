@@ -29,13 +29,13 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="w-full bg-white px-5 py-[65px] md:px-10 lg:py-[75px]">
+    <section className="w-full px-5 py-[65px] md:px-10 lg:py-[75px]">
 
-      <div className="mx-auto max-w-[1040px]">
+      <div className="mx-auto max-w-[1440px]">
 
         {/* Heading */}
         <div className="mb-[44px] text-center">
-          <h2 className="text-[30px] font-semibold leading-[42px] text-[#292929] md:text-[40px]">
+          <h2 className="text-[30px] font-jakarta font-semibold leading-[42px] text-[#292929] md:text-[40px]">
             Trusted by Patients & Doctors
           </h2>
         </div>
@@ -46,29 +46,29 @@ const Testimonials = () => {
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="flex min-h-[250px] max-w-[350px] flex-col justify-between overflow-hidden rounded-[14px] bg-gradient-to-br from-[#126D69] to-[#005C58] p-[23px] shadow-[inset_0_0_25px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_8px_25px_rgba(0,80,75,0.18)]"
+              className="flex min-h-[300px] max-w-[489px] flex-col justify-around overflow-hidden rounded-[16px] bg-gradient-to-br from-[#126D69] to-[#005C58] shadow-[inset_0_0_25px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_8px_25px_rgba(0,80,75,0.18)] pt-[30px] pb-[20px] pl-[28px] pr-[28px]"
             >
 
               {/* Review */}
-              <p className="max-w-[270px] text-[14px] font-normal leading-[21px] text-white/90">
+              <p className="max-w-[431px] h-[182px] font-inter font-normal text-[18px] leading-[28px] text-[#E5E5EF]">
                 {item.review}
               </p>
 
               {/* User Information */}
-              <div className="mt-8 flex items-center gap-[15px]">
+              <div className="flex items-center gap-[15px]">
 
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="h-[46px] w-[46px] shrink-0 rounded-full object-cover"
+                  className="h-[46px] w-[46px]"
                 />
 
                 <div>
-                  <h3 className="text-[15px] font-semibold leading-[22px] text-white">
+                  <h3 className="text-[15px] font-jakarta font-semibold leading-[22px] text-white">
                     {item.name}
                   </h3>
 
-                  <p className="mt-[2px] text-[12px] leading-[18px] text-white/80">
+                  <p className="mt-[2px] font-inter text-[12px] leading-[18px] text-white/80">
                     {item.role}
                   </p>
                 </div>

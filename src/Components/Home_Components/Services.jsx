@@ -41,7 +41,7 @@ const OurServices = () => {
       <div className="mx-auto w-full max-w-[1354px]">
 
         {/* Section Heading */}
-        <h2 className="mb-7 text-center text-[26px] font-semibold leading-tight text-[#292929] min-[375px]:text-[28px] sm:mb-8 sm:text-[30px] md:mb-10 md:text-[36px]">
+        <h2 className="mb-7 text-center text-[26px] font-semibold leading-tight text-[#292929] min-[375px]:text-[28px] sm:mb-8 sm:text-[30px] md:mb-10 md:text-[52px] font-jakarta">
           Our Services
         </h2>
 
@@ -80,19 +80,19 @@ const OurServices = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-[16px] font-semibold text-[#292929] sm:text-[17px]">
+              <h3 className="text-[24px] font-semibold text-[#292929] sm:text-[17px] font-jakarta">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="max-w-[290px] text-[12px] leading-[19px] text-[#64748B] sm:text-[13px] sm:leading-[20px]">
+              <p className="max-w-[290px] text-[12px] leading-[19px] text-[#64748B] sm:text-[16px] sm:leading-[20px] font-inter">
                 {service.description}
               </p>
 
               {/* Learn More */}
               <a
                 href="#"
-                className="inline-flex items-center gap-2 text-[12px] font-medium text-[#007F7B] transition-all duration-200 hover:gap-3 sm:text-[13px]"
+                className="inline-flex items-center gap-2 text-[12px] font-medium text-[#007F7B] transition-all duration-200 hover:gap-3 sm:text-[18px]"
               >
                 Learn More
                 <span className="text-lg">→</span>

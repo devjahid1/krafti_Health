@@ -13,11 +13,11 @@ const BannerContext = () => {
       {/* Left Content */}
       <div className="relative z-20 flex 2xl:w-[686px] min-w-0 w-full flex-col items-center text-center lg:w-[42%] lg:items-start lg:text-left">
 
-        <h1 className="max-w-[300px] text-[29px] font-bold leading-[1.15] tracking-tight text-[#172B4D] min-[375px]:max-w-[650px] min-[375px]:text-[35px] sm:text-[40px] md:text-[46px] lg:text-[42px] xl:text-[52px] 2xl:text-[64px] 2xl:ml-[115px]">
+        <h1 className="max-w-[300px] text-[29px] font-semibold leading-[1.15] tracking-tight text-[#172B4D] min-[375px]:max-w-[650px] min-[375px]:text-[35px] sm:text-[40px] md:text-[46px] lg:text-[42px] xl:text-[52px] 2xl:text-[64px] 2xl:ml-[115px] font-jakarta ">
           Making healthcare work better for everyone.
         </h1>
 
-        <p className="mt-3 max-w-[290px] text-[12px] leading-[1.6] text-[#5B6983] min-[375px]:mt-4 min-[375px]:max-w-[540px] min-[375px]:text-[14px] sm:mt-5 sm:text-[15px] md:text-[16px] lg:mt-6 xl:text-[17px] 2xl:text-[18px] 2xl:leading-7 2xl:ml-[115px]">
+        <p className="mt-3 max-w-[290px] text-[12px] leading-[1.6] text-[#5B6983] min-[375px]:mt-4 min-[375px]:max-w-[540px] min-[375px]:text-[14px] sm:mt-5 sm:text-[15px] md:text-[16px] lg:mt-6 xl:text-[17px] 2xl:text-[18px] 2xl:leading-7 2xl:ml-[115px] font-inter">
           From booking appointments to creating digital prescriptions and
           managing lab tests, MediLink brings patients and doctors together
           through simpler, more connected healthcare.

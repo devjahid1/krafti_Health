@@ -1,3 +1,4 @@
+
 import {
   CalendarDays,
   ShieldCheck,
@@ -56,23 +57,23 @@ const HealthcareBenefits = () => {
   return (
     <section className="w-full bg-white px-5 py-[75px] md:px-10 lg:py-[90px]">
 
-      <div className="mx-auto max-w-[1145px]">
+      <div className="mx-auto w-full max-w-[1457px]">
 
         {/* Section Heading */}
         <div className="mb-[40px] text-center">
 
-          <h2 className="text-[30px] font-semibold leading-[42px] text-[#292929] md:text-[40px]">
+          <h2 className="text-[30px] font-jakarta font-semibold leading-[42px] text-[#292929] md:text-[40px]">
             Built for a Healthier Tomorrow
           </h2>
 
-          <p className="mt-[12px] text-[13px] leading-[22px] text-[#64748B] md:text-[14px]">
+          <p className="mt-[12px] font-inter text-[13px] leading-[22px] text-[#64748B] md:text-[14px]">
             We combine technology and healthcare to give you a seamless, secure and reliable experience.
           </p>
 
         </div>
 
         {/* Benefits Grid */}
-        <div className="max-w-[1133px] grid grid-cols-1 gap-x-[55px] gap-y-[48px] sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid w-full grid-cols-1 justify-items-center gap-x-[55px] gap-y-[48px] sm:grid-cols-2 lg:grid-cols-3">
 
           {benefits.map((item) => {
             const Icon = item.icon;
@@ -80,7 +81,7 @@ const HealthcareBenefits = () => {
             return (
               <div
                 key={item.id}
-                className="flex items-start gap-[15px]"
+                className="flex w-full max-w-[350px] items-start gap-[15px]"
               >
 
                 {/* Icon */}
@@ -94,13 +95,13 @@ const HealthcareBenefits = () => {
                 </div>
 
                 {/* Content */}
-                <div className="pt-[1px]">
+                <div className="min-w-0 pt-[1px]">
 
-                  <h3 className="mb-[5px] text-[17px] font-semibold leading-[23px] text-[#292929]">
+                  <h3 className="mb-[5px] text-[17px] font-jakarta font-semibold leading-[23px] text-[#292929]">
                     {item.title}
                   </h3>
 
-                  <p className="max-w-[210px] text-[13px] leading-[20px] text-[#64748B]">
+                  <p className="max-w-[210px] font-inter text-[13px] leading-[20px] text-[#64748B]">
                     {item.description}
                   </p>
 

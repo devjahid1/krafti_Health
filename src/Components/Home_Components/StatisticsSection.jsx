@@ -1,7 +1,7 @@
 import patientIcon from "../../assets/HomeImg/stat1.png";
-import doctorIcon from "../../assets/HomeImg/stat1.png";
-import labIcon from "../../assets/HomeImg/stat1.png";
-import securityIcon from "../../assets/HomeImg/stat1.png";
+import doctorIcon from "../../assets/HomeImg/stat2.png";
+import labIcon from "../../assets/HomeImg/stat3.png";
+import securityIcon from "../../assets/HomeImg/stat4.png";
 
 const statistics = [
   {
@@ -53,7 +53,7 @@ const StatisticsSection = () => {
 
               {/* Statistics Content */}
               <div className="flex flex-col">
-                <h3 className="text-[24px] font-medium leading-[28px] text-[#292929]">
+                <h3 className="text-[24px] font-medium leading-[28px] text-[#292929] font-inter">
                   {item.number}
                 </h3>
 

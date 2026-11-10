@@ -12,13 +12,13 @@ const HealthcareCTA = () => {
       {/* Content */}
       <div className="mx-auto flex w-full max-w-[800px] flex-col items-center text-center">
 
-        <h2 className="max-w-[650px] text-[34px] font-semibold leading-[1.25] text-[#292929] md:text-[48px]">
+        <h2 className="max-w-[650px] font-jakarta text-[34px] font-semibold leading-[1.25] text-[#292929] md:text-[48px]">
           Experience a Smarter
           <br />
           Way to Healthcare
         </h2>
 
-        <p className="mt-[25px] max-w-[510px] text-[15px] leading-[25px] text-[#64748B] md:text-[16px]">
+        <p className="mt-[25px] font-inter max-w-[510px] text-[15px] leading-[25px] text-[#64748B] md:text-[16px]">
           Whether you're a patient or doctor, MediLink is here to make
           healthcare simpler, faster and more accessible.
         </p>

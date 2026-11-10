@@ -68,7 +68,7 @@ const Footer = () => {
             </a>
 
             {/* Description */}
-            <p className="mb-[18px] text-[14px] leading-[21px] text-[#64748B]">
+            <p className="mb-[18px] font-inter text-[14px] leading-[21px] text-[#64748B]">
               Making healthcare work better for everyone.
               Book appointments, manage prescriptions and
               lab tests from one connected platform.

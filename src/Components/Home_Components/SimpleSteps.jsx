@@ -37,11 +37,11 @@ const steps = [
 const SimpleSteps = () => {
   return (
     <section className="mt-6 w-full bg-[#F2F9FC] px-5 py-[65px] md:px-10 lg:py-[75px]">
-      <div className="mx-auto w-full max-w-[1354px]">
+      <div className="mx-auto w-full">
 
         {/* Section Heading */}
         <div className="mb-[38px] text-center">
-          <h2 className="text-[28px] font-semibold leading-[40px] text-[#292929] md:text-[34px]">
+          <h2 className="text-[28px] font-jakarta font-semibold leading-[40px] text-[#292929] md:text-[34px]">
             Simple Steps to Better Healthcare
           </h2>
 
@@ -51,7 +51,7 @@ const SimpleSteps = () => {
         </div>
 
         {/* Steps */}
-        <div className="mx-auto grid w-full max-w-[1015px] grid-cols-1 items-center gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+        <div className="mx-auto flex w-full flex-col items-start gap-10 sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:items-center lg:justify-around">
 
           {steps.map((step, index) => {
             const Icon = step.icon;
@@ -78,7 +78,7 @@ const SimpleSteps = () => {
 
                 {/* Arrow */}
                 {index !== steps.length - 1 && (
-                  <div className="absolute right-[30px] top-[40px] z-50 hidden h-[33px] w-[83px] items-center justify-center lg:flex">
+                  <div className="absolute right-[-180px] top-[73px] z-50 hidden h-[33px] w-[83px] items-center justify-center lg:flex">
                     <span className="text-[38px] font-bold leading-none ">
                       <img src={arrow} alt="" />
                     </span>
