@@ -36,16 +36,16 @@ const steps = [
 
 const SimpleSteps = () => {
   return (
-    <section className="mt-6 w-full bg-[#F2F9FC] px-5 py-[65px] md:px-10 lg:py-[75px]">
+    <section className="mt-6 w-full h-[576px] bg-[#F2F9FC] px-5 py-[65px] md:px-10 lg:py-[75px]">
       <div className="mx-auto w-full">
 
         {/* Section Heading */}
         <div className="mb-[38px] text-center">
-          <h2 className="text-[28px] font-jakarta font-semibold leading-[40px] text-[#292929] md:text-[34px]">
+          <h2 className="text-[28px] mt-23 font-jakarta font-semibold leading-[40px] text-[#292929] md:text-[52px] mb-5">
             Simple Steps to Better Healthcare
           </h2>
 
-          <p className="mt-2 text-[12px] leading-[18px] text-[#64748B]">
+          <p className="mt-2 text-[18px]  text-[#64748B]">
             Get the care you need in just a few steps
           </p>
         </div>
@@ -72,13 +72,13 @@ const SimpleSteps = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="ml-[13px] w-[164px] max-w-[190px] text-[12px] leading-[18px] text-[#64748B]">
+                <p className="ml-[13px] w-[240px] max-w-[290px] text-[18px] leading-[18px] text-[#64748B]">
                   {step.description}
                 </p>
 
                 {/* Arrow */}
                 {index !== steps.length - 1 && (
-                  <div className="absolute right-[-180px] top-[73px] z-50 hidden h-[33px] w-[83px] items-center justify-center lg:flex">
+                  <div className="absolute lg:right-[-70px] 2xl:right-[-130px] top-[73px] z-50 hidden h-[33px] w-[83px] items-center justify-center lg:flex">
                     <span className="text-[38px] font-bold leading-none ">
                       <img src={arrow} alt="" />
                     </span>

@@ -76,7 +76,7 @@ const PatientDoctorSection = () => {
               </div>
 
               {/* Description */}
-              <p className="mt-4 w-[350px] max-w-full text-[18px] leading-[27px] text-[#475569] md:leading-[28px] font-inter">
+              <p className="mt-4 w-[357px] max-w-full text-[18px] leading-[27px] text-[#475569] md:leading-[28px] font-inter">
                 {item.description}
               </p>
 

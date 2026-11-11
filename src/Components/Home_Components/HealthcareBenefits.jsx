@@ -62,11 +62,11 @@ const HealthcareBenefits = () => {
         {/* Section Heading */}
         <div className="mb-[40px] text-center">
 
-          <h2 className="text-[30px] font-jakarta font-semibold leading-[42px] text-[#292929] md:text-[40px]">
+          <h2 className="text-[30px] font-jakarta font-semibold leading-[42px] text-[#292929] md:text-[52px] mb-7">
             Built for a Healthier Tomorrow
           </h2>
 
-          <p className="mt-[12px] font-inter text-[13px] leading-[22px] text-[#64748B] md:text-[14px]">
+          <p className="mt-[12px] font-inter text-[13px] leading-[22px] text-[#64748B] md:text-[16px] pb-7">
             We combine technology and healthcare to give you a seamless, secure and reliable experience.
           </p>
 
@@ -97,11 +97,11 @@ const HealthcareBenefits = () => {
                 {/* Content */}
                 <div className="min-w-0 pt-[1px]">
 
-                  <h3 className="mb-[5px] text-[17px] font-jakarta font-semibold leading-[23px] text-[#292929]">
+                  <h3 className="mb-[5px] text-[22px] font-jakarta font-semibold leading-[23px] text-[#292929]">
                     {item.title}
                   </h3>
 
-                  <p className="max-w-[210px] font-inter text-[13px] leading-[20px] text-[#64748B]">
+                  <p className="max-w-[240px] font-inter text-[17px] leading-[26px] text-[#64748B]">
                     {item.description}
                   </p>
 

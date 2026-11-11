@@ -12,7 +12,7 @@ const HealthcareCTA = () => {
       {/* Content */}
       <div className="mx-auto flex w-full max-w-[800px] flex-col items-center text-center">
 
-        <h2 className="max-w-[650px] font-jakarta text-[34px] font-semibold leading-[1.25] text-[#292929] md:text-[48px]">
+        <h2 className="max-w-[650px] font-jakarta text-[34px] font-semibold leading-[1.25] text-[#292929] md:text-[52px]">
           Experience a Smarter
           <br />
           Way to Healthcare

@@ -80,7 +80,7 @@ const OurServices = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-[24px] font-semibold text-[#292929] sm:text-[17px] font-jakarta">
+              <h3 className="text-[24px] font-semibold text-[#292929] sm:text-[24px] font-jakarta">
                 {service.title}
               </h3>
 

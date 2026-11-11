@@ -1,7 +1,7 @@
 import patientIcon from "../../assets/HomeImg/stat1.png";
 import doctorIcon from "../../assets/HomeImg/stat2.png";
-import labIcon from "../../assets/HomeImg/stat3.png";
-import securityIcon from "../../assets/HomeImg/stat4.png";
+import labIcon from "../../assets/HomeImg/stat4.png";
+import securityIcon from "../../assets/HomeImg/stat5.png";
 
 const statistics = [
   {
@@ -34,13 +34,13 @@ const StatisticsSection = () => {
   return (
     <section className="w-full bg-white py-10">
       {/* Main Container */}
-      <div className="relative left-1/2 w-[calc(100%-40px)] max-w-[1457px] -translate-x-1/2">
+      <div className="relative left-1/2 flex max-w-[1720px] -translate-x-1/2">
         {/* Statistics Grid */}
         <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
           {statistics.map((item) => (
             <div
               key={item.id}
-              className="flex items-center gap-[18px]"
+              className="flex items-center justify-center gap-[18px]"
             >
               {/* Icon */}
               <div className="flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-[#D2F0F0]">
@@ -53,7 +53,7 @@ const StatisticsSection = () => {
 
               {/* Statistics Content */}
               <div className="flex flex-col">
-                <h3 className="text-[24px] font-medium leading-[28px] text-[#292929] font-inter">
+                <h3 className="text-[24px]  font-medium leading-[28px] text-[#292929] font-inter">
                   {item.number}
                 </h3>
 

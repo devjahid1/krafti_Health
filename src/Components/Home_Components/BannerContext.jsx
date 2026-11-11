@@ -11,7 +11,7 @@ const BannerContext = () => {
     <section className="relative mx-auto flex w-full max-w-[1920px] flex-col items-center justify-center overflow-hidden px-3 pb-8 pt-6 min-[375px]:px-4 min-[375px]:pt-8 sm:px-6 md:px-8 lg:min-h-[680px] lg:flex-row lg:gap-4 lg:px-10 lg:py-8 xl:gap-6 xl:px-12 2xl:min-h-[850px] 2xl:gap-0 2xl:px-[100px]">
 
       {/* Left Content */}
-      <div className="relative z-20 flex 2xl:w-[686px] min-w-0 w-full flex-col items-center text-center lg:w-[42%] lg:items-start lg:text-left">
+      <div className="relative z-20 flex 2xl:w-[686px] min-w-0 w-full flex-col items-center text-center lg:w-[42%] lg:items-start lg:text-left 2xl:mt-[-210px]">
 
         <h1 className="max-w-[300px] text-[29px] font-semibold leading-[1.15] tracking-tight text-[#172B4D] min-[375px]:max-w-[650px] min-[375px]:text-[35px] sm:text-[40px] md:text-[46px] lg:text-[42px] xl:text-[52px] 2xl:text-[64px] 2xl:ml-[115px] font-jakarta ">
           Making healthcare work better for everyone.
