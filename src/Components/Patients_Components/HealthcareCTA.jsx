@@ -16,7 +16,7 @@ const HealthcareCTA = () => {
           Your next step to better healthcare.
         </h2>
 
-        <p className="mt-[25px] font-inter max-w-[610px] text-[15px] leading-[25px] text-[#64748B] md:text-[16px]">
+        <p className="mt-[25px] font-inter max-w-[610px] text-[15px] leading-[25px] text-[#64748B] md:text-[18px]">
           Find a doctor, choose a time and keep your care connected with MediLink.
         </p>
 

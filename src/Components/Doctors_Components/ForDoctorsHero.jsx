@@ -15,11 +15,11 @@ const ForDoctorsHero = () => {
             For Doctors
           </span>
 
-          <h1 className="max-w-[600px] font-jakarta text-[34px] font-normal leading-[1.12] text-[#292929] sm:text-[42px] md:text-[48px] lg:text-[52px] xl:text-[64px]">
+          <h1 className="max-w-[600px] font-jakarta font-semibold text-[34px] font-normal leading-[1.12] text-[#292929] sm:text-[42px] md:text-[48px] lg:text-[52px] xl:text-[64px]">
             Less admin. More connected patient care.
           </h1>
 
-          <p className="mt-[18px] max-w-[550px] font-inter text-[13px] font-normal leading-[22px] text-[#64748B] sm:text-[14px] sm:leading-[24px]">
+          <p className="mt-[18px] max-w-[600px] font-inter text-[13px] font-normal leading-[22px] text-[#64748B] sm:text-[18px] sm:leading-[24px]">
             Bring your schedule, digital prescriptions, lab requests and patient records into one clear workspace. Designed around the way you care.
           </p>
 
@@ -43,7 +43,7 @@ const ForDoctorsHero = () => {
         </div>
 
         {/* Right Image */}
-        <div className="relative mx-auto w-full max-w-[602px] shrink-0 md:max-w-[650px] lg:w-[52%] lg:max-w-[560px] xl:max-w-[602px]">
+        <div className="relative mx-auto w-full max-w-[602px] shrink-0 md:max-w-[650px] lg:w-[52%] lg:max-w-[560px] xl:max-w-[734px]">
 
           <img
             src={doctors_bg}

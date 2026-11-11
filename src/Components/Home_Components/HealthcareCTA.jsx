@@ -18,7 +18,7 @@ const HealthcareCTA = () => {
           Way to Healthcare
         </h2>
 
-        <p className="mt-[25px] font-inter max-w-[510px] text-[15px] leading-[25px] text-[#64748B] md:text-[16px]">
+        <p className="mt-[25px] font-inter max-w-[510px] text-[15px] leading-[25px] text-[#64748B] md:text-[18px]">
           Whether you're a patient or doctor, MediLink is here to make
           healthcare simpler, faster and more accessible.
         </p>
