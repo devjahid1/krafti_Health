@@ -20,6 +20,7 @@ const Doctors = () => {
             <DoctorCareJourneySection/>
             <DoctorOnboardingSection/>
             <HealthcareCTA/>
+            {/* Fotter */}
             <Footer/>
         </>
     );
