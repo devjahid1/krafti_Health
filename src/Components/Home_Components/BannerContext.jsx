@@ -51,7 +51,7 @@ const BannerContext = () => {
         <img
           src={dp}
           alt="MediLink doctor and patient"
-          className="relative z-10 h-auto w-full max-w-[280px] object-contain min-[375px]:max-w-[340px] min-[390px]:max-w-[355px] sm:max-w-[480px] sm:mb-[-60px] md:max-w-[650px] md:mb-[-80px] lg:max-w-[560px] lg:mb-[-247px] xl:max-w-[680px] xl:mb-[-150px] 2xl:max-w-[857px] 2xl:mb-0 2xl:mt-[-12px] animate-fade-in"
+          className="relative z-10 h-auto w-full max-w-[280px] object-contain min-[375px]:max-w-[340px] min-[390px]:max-w-[355px] sm:max-w-[480px] sm:mb-[-60px] md:max-w-[650px] md:mb-[-80px] lg:max-w-[560px] lg:mb-[-247px] xl:max-w-[680px] xl:mb-[-150px] 2xl:max-w-[857px] 2xl:mb-0 2xl:mt-[-12px] "
         />
 
         {/* Doctor Image */}
