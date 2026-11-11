@@ -41,7 +41,7 @@ const PatientFeatures = () => {
         {/* Section Heading */}
         <div className="mb-[35px] text-center sm:mb-[40px] lg:mb-[45px]">
 
-          <h2 className="font-jakarta text-[27px] font-normal leading-[1.2] text-[#292929] sm:text-[34px] md:text-[40px] lg:text-[48px]">
+          <h2 className="font-jakarta font-semibold text-[27px] font-normal leading-[1.2] text-[#292929] sm:text-[34px] md:text-[40px] lg:text-[48px]">
             Everything you need, connected.
           </h2>
 

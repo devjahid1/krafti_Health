@@ -10,8 +10,8 @@ import SimpleSteps from "../Components/Patients_Components/SimpleSteps.jsx";
 const Patients = () => {
   return (
     <>
+      <Navbar />
       <div className="w-full bg-[#EFF9F8]">
-        <Navbar />
         <ForPatientsHero />
       </div>
 

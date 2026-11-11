@@ -29,11 +29,11 @@ const PersonalCareSection = () => {
             Your Personal Care Space
           </span>
 
-          <h2 className="w-full pb-[18px] text-left font-jakarta text-[29px] font-normal leading-[1.15] text-[#292929] sm:pb-[22px] sm:text-[38px] md:text-center md:text-[42px] lg:pb-[26px] lg:text-left lg:text-[44px] xl:text-[48px]">
+          <h2 className="w-full pb-[18px] text-left font-jakarta text-[29px] font-semibold leading-[1.15] text-[#292929] sm:pb-[22px] sm:text-[38px] md:text-center md:text-[42px] lg:pb-[15px] lg:text-left lg:text-[44px] xl:text-[48px]">
             Your next visit. Your latest records. All together.
           </h2>
 
-          <p className="mt-[5px] w-full max-w-[490px] text-left font-inter text-[13px] leading-[22px] text-[#64748B] sm:text-[14px] sm:leading-[24px] md:text-center lg:mt-[14px] lg:text-left lg:text-[16px] lg:leading-[26px] xl:text-[18px]">
+          <p className="mt-[5px] w-full max-w-[490px] text-left font-inter text-[18px] leading-[22px] text-[#64748B] sm:text-[18px] sm:leading-[24px] md:text-center lg:mt-[14px] lg:text-left lg:text-[16px] lg:leading-[29px] xl:text-[18px]">
             No more searching through messages or paper files. Your MediLink account gives your health information a clear, familiar home.
           </p>
 
@@ -47,7 +47,7 @@ const PersonalCareSection = () => {
                 className="mt-[3px] shrink-0 text-[#292929] sm:h-[19px] sm:w-[19px]"
               />
 
-              <p className="font-inter text-[12px] leading-[20px] text-[#64748B] sm:text-[13px] sm:leading-[22px] lg:text-[14px] lg:leading-[24px]">
+              <p className="font-inter text-[12px] leading-[20px] text-[#64748B] pb-[10px] sm:text-[13px] sm:leading-[22px] lg:text-[18px] lg:leading-[24px]">
                 See upcoming appointments and clinic details at a glance.
               </p>
             </div>
@@ -59,7 +59,7 @@ const PersonalCareSection = () => {
                 className="mt-[3px] shrink-0 text-[#292929] sm:h-[19px] sm:w-[19px]"
               />
 
-              <p className="font-inter text-[12px] leading-[20px] text-[#64748B] sm:text-[13px] sm:leading-[22px] lg:text-[14px] lg:leading-[24px]">
+              <p className="font-inter text-[12px] leading-[20px] text-[#64748B] sm:text-[13px] sm:leading-[22px] lg:text-[18px] pb-[10px] lg:leading-[24px]">
                 Revisit your doctor's prescriptions and download reports.
               </p>
             </div>
@@ -71,7 +71,7 @@ const PersonalCareSection = () => {
                 className="mt-[3px] shrink-0 text-[#292929] sm:h-[19px] sm:w-[19px]"
               />
 
-              <p className="font-inter text-[12px] leading-[20px] text-[#64748B] sm:text-[13px] sm:leading-[22px] lg:text-[14px] lg:leading-[24px]">
+              <p className="font-inter text-[12px] leading-[20px] text-[#64748B] sm:text-[13px] sm:leading-[22px] lg:text-[19px] lg:leading-[24px]">
                 Keep a useful record for your next conversation with your doctor.
               </p>
             </div>

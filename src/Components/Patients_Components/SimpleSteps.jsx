@@ -40,11 +40,11 @@ const SimpleSteps = () => {
 
         {/* Section Heading */}
         <div className="mb-[38px] text-center">
-          <h2 className="text-[28px] font-jakarta font-semibold leading-[40px] text-[#292929] md:text-[34px]">
+          <h2 className="text-[28px] font-jakarta font-semibold leading-[40px] text-[#292929] md:text-[48px]">
             Simple Steps to Better Healthcare
           </h2>
 
-          <p className="mt-2 text-[12px] leading-[18px] text-[#64748B]">
+          <p className="mt-7 text-[18px]  leading-[18px] text-[#64748B] mb-10">
             Get the care you need in just a few steps
           </p>
         </div>
@@ -66,12 +66,12 @@ const SimpleSteps = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="mb-[6px] whitespace-nowrap text-[24px] font-medium leading-[32px] text-[#292929]">
+                <h3 className="mb-[6px] whitespace-nowrap text-[24px] font-medium leading-[32px] text-[#292929] ">
                   {step.id}. {step.title}
                 </h3>
 
                 {/* Description */}
-                <p className="ml-[13px] w-[346px] max-w-[190px] text-[12px] leading-[18px] text-[#64748B]">
+                <p className="ml-[13px] mb-5 w-[346px] max-w-[346px] text-[18px] leading-[29px] text-[#64748B]">
                   {step.description}
                 </p>
 

@@ -49,11 +49,11 @@ const PatientFAQ = () => {
             Need a hand?
           </span>
 
-          <h2 className="max-w-[380px] text-left font-jakarta text-[28px] font-semibold leading-[1.2] text-[#292929] sm:text-[34px] md:text-center md:text-[38px] lg:text-left lg:text-[40px]">
+          <h2 className="max-w-[460px] text-left font-jakarta text-[28px] font-semibold leading-[1.2] text-[#292929] sm:text-[34px] md:text-center md:text-[38px] lg:text-left lg:text-[48px]">
             A little clarity before you book.
           </h2>
 
-          <p className="mt-[14px] max-w-[360px] font-inter text-[12px] font-normal leading-[20px] text-[#64748B] sm:mt-[17px] sm:text-[13px] sm:leading-[21px] md:text-center lg:text-left">
+          <p className="mt-[14px] max-w-[460px] font-inter text-[12px] font-normal leading-[20px] text-[#64748B] sm:mt-[17px] sm:text-[18px] sm:leading-[21px] md:text-center lg:text-left">
             Here are a few things patients often ask. For account or booking
             help, visit our Help Center.
           </p>
@@ -87,7 +87,7 @@ const PatientFAQ = () => {
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 py-[16px] text-left sm:py-[18px] lg:py-[20px]"
                 >
-                  <span className="font-inter text-[13px] font-medium leading-[20px] text-[#292929] sm:text-[14px] sm:leading-[22px] md:text-[15px]">
+                  <span className="font-inter text-[13px] font-medium leading-[20px] text-[#292929] sm:text-[14px] sm:leading-[22px] md:text-[21px]">
                     {faq.question}
                   </span>
 
@@ -109,7 +109,7 @@ const PatientFAQ = () => {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="max-w-[700px] font-inter text-[11px] font-normal leading-[19px] text-[#64748B] sm:text-[12px] sm:leading-[21px] md:text-[13px]">
+                    <p className="max-w-[700px] font-inter text-[11px] font-normal leading-[19px] text-[#64748B] sm:text-[12px] sm:leading-[21px] md:text-[18px]">
                       {faq.answer}
                     </p>
                   </div>
