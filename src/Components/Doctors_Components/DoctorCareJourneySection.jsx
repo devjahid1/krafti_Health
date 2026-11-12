@@ -22,43 +22,45 @@ const DoctorCareJourneySection = () => {
         </div>
 
         {/* Right: Content */}
-        <div className="flex w-full max-w-[650px] flex-col items-start md:items-center lg:w-[52%] lg:items-start lg:-translate-x-[55px]">
+        <div className="flex w-full max-w-[650px] flex-col items-center text-center lg:w-[52%] lg:items-start lg:text-left lg:-translate-x-[55px]">
 
-          <span className="mb-[13px] font-inter text-[11px] font-semibold uppercase tracking-[0.4px] text-[#009591] sm:text-[15px]">
+          <span className="mb-[13px] font-inter text-[11px] font-semibold uppercase tracking-[0.4px] text-[#009591] sm:text-[12px] md:text-[13px] xl:text-[15px]">
             Beyond the Appointment
           </span>
 
-          <h2 className="w-[700px] text-left font-jakarta text-[29px] font-semibold leading-[1.17] text-[#292929] sm:text-[36px] md:text-center md:text-[40px] lg:text-left lg:text-[48px]">
+          <h2 className="w-full text-center font-jakarta text-[26px] font-semibold leading-[1.17] text-[#292929] sm:text-[32px] md:text-[40px] lg:text-left lg:text-[42px] xl:text-[48px]">
             Keep the whole care journey in view.
           </h2>
 
-          <p className="mt-[15px] w-full max-w-[700px] text-left font-inter text-[12px] leading-[20px] text-[#64748B] sm:text-[18px] sm:leading-[29px] md:text-center lg:text-left">
-            A consultation doesn't end when the visit does. Connect your prescriptions and lab requests to the patient record so the next step is clear for you and your patient.
+          <p className="mt-[15px] w-full max-w-[700px] text-center font-inter text-[12px] leading-[20px] text-[#64748B] sm:text-[13px] sm:leading-[22px] md:text-[14px] md:leading-[24px] lg:text-left lg:text-[16px] lg:leading-[26px] xl:text-[18px] xl:leading-[29px]">
+            A consultation doesn't end when the visit does. Connect your
+            prescriptions and lab requests to the patient record so the next
+            step is clear for you and your patient.
           </p>
 
           {/* Feature Points */}
           <div className="mt-[20px] flex w-full flex-col gap-[14px]">
 
-            <div className="flex items-start gap-[10px]">
+            <div className="flex items-start gap-[10px] text-left">
               <ClipboardList
                 size={15}
                 strokeWidth={1.7}
                 className="mt-[2px] shrink-0 text-[#292929]"
               />
 
-              <p className="font-inter text-[11px] leading-[19px] text-[#64748B] sm:text-[18px] sm:leading-[21px]">
+              <p className="font-inter text-[11px] leading-[19px] text-[#64748B] sm:text-[13px] sm:leading-[21px] md:text-[14px] lg:text-[16px] xl:text-[18px]">
                 Access past prescriptions and available test reports.
               </p>
             </div>
 
-            <div className="flex items-start gap-[10px]">
+            <div className="flex items-start gap-[10px] text-left">
               <FileText
                 size={15}
                 strokeWidth={1.7}
                 className="mt-[2px] shrink-0 text-[#292929]"
               />
 
-              <p className="font-inter text-[11px] leading-[19px] text-[#64748B] sm:text-[18px] sm:leading-[21px]">
+              <p className="font-inter text-[11px] leading-[19px] text-[#64748B] sm:text-[13px] sm:leading-[21px] md:text-[14px] lg:text-[16px] xl:text-[18px]">
                 Give patients a simple way to revisit their care documents.
               </p>
             </div>
@@ -71,7 +73,6 @@ const DoctorCareJourneySection = () => {
           </button>
 
         </div>
-
       </div>
     </section>
   );
