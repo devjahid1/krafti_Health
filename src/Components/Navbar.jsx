@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/Logo.png";
@@ -16,12 +17,23 @@ const Navbar = () => {
   const closeMenu = () => setMenuOpen(false);
 
   const linkClass =
-    "whitespace-nowrap text-[15px] font-medium text-[#26364B] transition-colors duration-200 hover:text-[#176BFF] xl:text-[16px] 2xl:text-[18px]";
+    "whitespace-nowrap text-[13px] font-medium text-[#26364B] transition-colors duration-200 hover:text-[#176BFF] xl:text-[16px] 2xl:text-[18px]";
 
   return (
     <header className="relative z-50 w-full font-inter">
       {/* Navbar Container */}
-      <nav className="mx-auto flex w-full max-w-[1480px] items-center justify-between gap-3 px-4 py-4 sm:px-6 md:px-8 lg:gap-4 lg:px-8 xl:px-10 2xl:px-0 2xl:py-6">
+      <nav
+        className="
+          mx-auto flex w-full max-w-[1480px]
+          items-center justify-between gap-3
+          px-4 py-3
+          sm:px-6 sm:py-4
+          md:px-8
+          lg:gap-3 lg:px-6
+          xl:gap-4 xl:px-10
+          2xl:gap-3 2xl:px-0 2xl:py-6
+        "
+      >
         {/* Logo */}
         <a
           href="/"
@@ -32,12 +44,26 @@ const Navbar = () => {
           <img
             src={logo}
             alt="MediLink"
-            className="h-auto w-[125px] sm:w-[145px] lg:w-[150px] xl:w-[160px] 2xl:w-[172px]"
+            className="
+              h-auto w-[115px]
+              sm:w-[135px]
+              md:w-[145px]
+              lg:w-[130px]
+              xl:w-[160px]
+              2xl:w-[172px]
+            "
           />
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden min-w-0 flex-1 items-center justify-center gap-4 lg:flex xl:gap-6 2xl:gap-10">
+        <div
+          className="
+            hidden min-w-0 flex-1 items-center justify-center
+            gap-3 lg:flex
+            xl:gap-6
+            2xl:gap-10
+          "
+        >
           {navLinks.map((link) => (
             <a key={link.path} href={link.path} className={linkClass}>
               {link.name}
@@ -51,7 +77,15 @@ const Navbar = () => {
             href="https://rx.kraftihealth.tech"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-[#090909] px-3 py-7.5 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-[#0954D8] xl:px-7 xl:py-3 xl:text-[15px] 2xl:px-10 2xl:py-3.5 2xl:text-[17px]"
+            className="
+              inline-flex items-center justify-center
+              rounded-full bg-[#090909]
+              px-4 py-2.5
+              text-[13px] font-semibold text-white
+              transition-all duration-200 hover:bg-[#0954D8]
+              xl:px-7 xl:py-3 xl:text-[15px]
+              2xl:px-10 2xl:py-3.5 2xl:text-[17px]
+            "
           >
             Sign In
           </a>
@@ -61,7 +95,12 @@ const Navbar = () => {
         <button
           type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-[#26364B] transition-colors hover:bg-blue-50 lg:hidden"
+          className="
+            flex h-10 w-10 shrink-0 items-center justify-center
+            rounded-lg text-[#26364B]
+            transition-colors hover:bg-blue-50
+            lg:hidden
+          "
           aria-label={
             menuOpen ? "Close navigation menu" : "Open navigation menu"
           }
@@ -87,18 +126,29 @@ const Navbar = () => {
               key={link.path}
               href={link.path}
               onClick={closeMenu}
-              className="border-b border-gray-100 py-3.5 text-[15px] font-medium text-[#26364B] transition-colors hover:text-[#176BFF]"
+              className="
+                border-b border-gray-100 py-3.5
+                text-[15px] font-medium text-[#26364B]
+                transition-colors hover:text-[#176BFF]
+              "
             >
               {link.name}
             </a>
           ))}
 
+          {/* Mobile Sign In */}
           <a
             href="https://rx.kraftihealth.tech"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}
-            className="mt-4 flex items-center justify-center rounded-full bg-[#0d0d0d] px-6 py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-[#0954D8]"
+            className="
+              mt-4 flex items-center justify-center
+              rounded-full bg-[#0d0d0d]
+              px-6 py-3.5
+              text-[15px] font-semibold text-white
+              transition-colors hover:bg-[#0954D8]
+            "
           >
             Sign In
           </a>
