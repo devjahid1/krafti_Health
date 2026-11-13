@@ -8,11 +8,11 @@ const ForDoctorsHero = () => {
       <div className="mx-auto flex min-h-[auto] w-full max-w-[1440px] flex-col items-center justify-center gap-10 md:gap-12 lg:min-h-[520px] lg:flex-row lg:gap-[45px] xl:gap-[70px]">
         {/* Left Content */}
         <div className="flex w-full flex-col items-center text-center lg:w-[48%] lg:max-w-none lg:items-start lg:text-left">
-          <span className="mb-[12px] font-inter text-[11px] font-semibold uppercase tracking-[0.3px] text-[#009B95] sm:mb-[14px] sm:text-[12px] lg:text-[13px] 2xl:text-[14px]">
+          <span className="mb-[12px] font-inter text-[15px] font-semibold uppercase tracking-[0.3px] text-[#009B95] sm:mb-[14px] sm:text-[15px] lg:text-[13px] 2xl:text-[14px]">
             For Doctors
           </span>
 
-          <h1 className="w-full max-w-[600px] font-jakarta text-[28px] font-semibold leading-[1.18] text-[#292929] sm:text-[34px] sm:leading-[1.15] md:text-[38px] lg:text-left lg:text-[42px] xl:text-[50px] 2xl:text-[64px]">
+          <h1 className="w-full max-w-[600px] font-jakarta text-[28px] font-semibold leading-[1.18] text-[#292929] sm:text-[34px] sm:leading-[1.15] md:text-[38px] lg:text-left lg:text-[42px] xl:text-[60px] 2xl:text-[64px]">
             Less admin. More connected patient care.
           </h1>
 

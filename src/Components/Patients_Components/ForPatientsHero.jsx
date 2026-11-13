@@ -19,7 +19,7 @@ const ForPatientsHero = () => {
             Your health journey, made simpler.
           </h1>
 
-          <p className="mt-[18px] max-w-[600px] font-inter text-[13px] font-normal leading-[22px] text-[#64748B] sm:text-[14px] sm:leading-[24px] lg:ml-[20px] xl:ml-[0px]">
+          <p className="mt-[18px] max-w-[600px] font-inter text-[13px] font-normal leading-[22px] text-[#64748B] sm:text-[14px] xl:text-[18px] sm:leading-[24px] lg:ml-[20px] xl:ml-[0px]">
             From finding the right doctor to keeping track of your prescriptions and lab reports, MediLink brings your care together in one easy place.
           </p>
 

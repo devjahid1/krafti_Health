@@ -11,19 +11,19 @@ const PlatformShowcase = () => {
         <div className="mx-auto flex w-full max-w-[850px] flex-col items-center text-center">
 
           {/* Eyebrow */}
-          <span className="mb-[16px] font-inter text-[10px] font-semibold uppercase tracking-[0.5px] text-[#009B95] sm:mb-[20px] sm:text-[11px] md:text-[12px]">
+          <span className="mb-[16px] font-inter text-[10px] font-semibold uppercase tracking-[0.5px] text-[#009B95] sm:mb-[20px] sm:text-[11px] md:text-[12px] xl:text-[14px]">
             One Connected Platform
           </span>
 
           {/* Heading */}
-          <h2 className="font-jakarta text-[27px] font-semibold leading-[1.12] text-[#292929] sm:text-[34px] md:text-[42px] lg:text-[46px] xl:text-[52px]">
+          <h2 className="font-jakarta text-[27px] font-semibold leading-[1.12] text-[#292929] sm:text-[34px] md:text-[42px] lg:text-[46px] xl:text-[64px]">
             Every step of care.
             <br />
             Working better together.
           </h2>
 
           {/* Description */}
-          <p className="mt-[16px] max-w-[800px] font-inter text-[12px] font-normal leading-[20px] text-[#64748B] sm:mt-[20px] sm:text-[13px] sm:leading-[22px] md:text-[14px] md:leading-[24px] lg:text-[16px] lg:leading-[25px] xl:text-[16px]">
+          <p className="mt-[16px] max-w-[800px] font-inter text-[12px] font-normal leading-[20px] text-[#64748B] sm:mt-[20px] sm:text-[13px] sm:leading-[22px] md:text-[14px] md:leading-[24px] lg:text-[16px] lg:leading-[25px] xl:text-[20px] xl:leading-[29px]">
             Appointments, digital prescriptions and lab management — connected
             for patients and doctors, from the first booking to the next
             follow-up.
