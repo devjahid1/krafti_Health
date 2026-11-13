@@ -39,7 +39,7 @@ const features = [
 
 const DoctorFeatures = () => {
   return (
-    <section className="w-full bg-white px-5 py-[50px] sm:px-8 sm:py-[60px] md:py-[65px] lg:px-10 lg:py-[100px]">
+    <section className="relative z-0 w-full bg-white px-5 py-[50px] sm:px-8 sm:py-[60px] md:py-[65px] lg:px-10 lg:py-[100px]">
       <div className="mx-auto w-full max-w-[1450px]">
 
         {/* Section Heading */}
@@ -55,7 +55,7 @@ const DoctorFeatures = () => {
         </div>
 
         {/* Feature Cards */}
-        <div className="mx-auto grid h-[321px] w-full max-w-[1920px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[10px] xl:gap-[12px]">
+        <div className="mx-auto grid h-auto w-full max-w-[1920px] grid-cols-1 gap-4 sm:grid-cols-2 lg:h-[321px] lg:grid-cols-4 lg:gap-[10px] xl:gap-[12px]">
 
           {features.map((feature) => {
             const Icon = feature.icon;
@@ -63,7 +63,7 @@ const DoctorFeatures = () => {
             return (
               <div
                 key={feature.id}
-                className="flex min-h-[190px] w-full flex-col rounded-[10px] border border-[#E7EFF1] bg-[#FCFDFD] p-[18px] transition-shadow duration-300 hover:shadow-[0_5px_20px_rgba(0,0,0,0.05)] sm:min-h-[205px] sm:p-[20px] lg:min-h-[210px] lg:p-[14px] xl:p-[32px]"
+                className="flex min-h-[190px] w-full flex-col rounded-[10px] border border-[#E7EFF1] bg-[#FCFDFD] p-[18px] transition-shadow duration-300 hover:shadow-[0_5px_20px_rgba(0,0,0,0.05)] sm:min-h-[205px] sm:p-[20px] lg:min-h-0 lg:p-[14px] xl:p-[32px]"
               >
                 {/* Icon */}
                 <div className="mb-[12px] flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-[6px] bg-[#E1F6F5] text-[#008F89] sm:h-[38px] sm:w-[38px]">

@@ -1,3 +1,4 @@
+
 import patientIcon from "../../assets/HomeImg/stat1.png";
 import doctorIcon from "../../assets/HomeImg/stat2.png";
 import labIcon from "../../assets/HomeImg/stat4.png";
@@ -34,9 +35,38 @@ const StatisticsSection = () => {
   return (
     <section className="w-full bg-white py-10">
       {/* Main Container */}
-      <div className="relative left-1/2 flex max-w-[1720px] -translate-x-1/2">
-        {/* Statistics Grid */}
-        <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+      <div className="mx-auto flex w-full max-w-[1720px] justify-center px-4 sm:px-6 md:px-8 lg:px-10 lg:py-0">
+        
+        {/* Mobile & Tablet */}
+        <div className="grid w-fit grid-cols-2 justify-items-center gap-x-5 gap-y-7 sm:gap-x-10 sm:gap-y-8 lg:hidden">
+          {statistics.map((item) => (
+            <div
+              key={item.id}
+              className="flex w-fit items-center justify-start gap-2 sm:gap-3"
+            >
+              <div className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-full bg-[#D2F0F0] sm:h-[50px] sm:w-[50px]">
+                <img
+                  src={item.icon}
+                  alt=""
+                  className="h-[25px] w-[25px] object-contain sm:h-[30px] sm:w-[30px]"
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <h3 className="font-inter text-[17px] font-medium leading-[22px] text-[#292929] sm:text-[20px] sm:leading-[25px]">
+                  {item.number}
+                </h3>
+
+                <p className="whitespace-nowrap text-[10px] leading-[17px] text-[#737373] sm:text-[13px] sm:leading-[21px]">
+                  {item.label}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop - Original Design Preserved */}
+        <div className="hidden w-full grid-cols-4 gap-5 lg:grid">
           {statistics.map((item) => (
             <div
               key={item.id}
@@ -53,7 +83,7 @@ const StatisticsSection = () => {
 
               {/* Statistics Content */}
               <div className="flex flex-col">
-                <h3 className="text-[24px]  font-medium leading-[28px] text-[#292929] font-inter">
+                <h3 className="font-inter text-[24px] font-medium leading-[28px] text-[#292929]">
                   {item.number}
                 </h3>
 
@@ -64,6 +94,7 @@ const StatisticsSection = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
